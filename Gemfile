@@ -13,6 +13,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Authenticcation
 gem 'devise'
 
+group :development do
+  gem 'letter_opener'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
