@@ -6,7 +6,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= title "Textula" %>
+  <title><%= yield(:title) %></title>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
