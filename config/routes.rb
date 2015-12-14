@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     confirmations: "users/confirmations",
     passwords: "users/passwords",
   }
-  root to: "static#dashboard"
+  root to: "static#signed_in_home"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
