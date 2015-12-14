@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     confirmations: "users/confirmations",
     passwords: "users/passwords",
   }
+
+  # this route is where devise redirects users after log in
   root to: "static#signed_in_home"
 
   # The priority is based upon order of creation: first created -> highest priority.

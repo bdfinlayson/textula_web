@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe StaticController, type: :controller do
-  let(:user) { create :user }
+  let(:user) { FactoryGirl.create :user }
 
   describe "GET #signed_in_home" do
     it 'redirects to sign in if not logged in' do
@@ -11,9 +11,7 @@ RSpec.describe StaticController, type: :controller do
 
     it 'gets the a signed in homepage when logged in' do
       sign_in user
-      get :home
-
+      get :signed_in_home
     end
   end
-
 end
