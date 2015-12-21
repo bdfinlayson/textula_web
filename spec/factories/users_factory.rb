@@ -3,6 +3,6 @@ FactoryGirl.define do
     email
     password "password"
     password_confirmation "password"
-    after(:create) { |user| user.confirm! }
+    after(:create) { |user| user.confirm }
   end
 end
