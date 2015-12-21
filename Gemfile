@@ -17,10 +17,15 @@ group :development do
   gem 'letter_opener'
 end
 
+group :test do
+  gem 'simplecov', :require => false
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'railroady'
 
   # Testing
   gem 'rspec-rails'
